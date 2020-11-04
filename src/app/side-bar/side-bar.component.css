@@ -1,0 +1,206 @@
+#sidebar {
+  /* position: absolute;
+width: 260px;
+height: 1510px;
+left: 1px;
+top: 0px; */
+padding-top: 100px !important;
+  z-index: 99;
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  left: 0px;
+  overflow-y: auto;
+  background: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#sidebar .sidebar-header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 5px 0px;
+}
+#sidebar .sidebar-header {
+  background: #27AE60;
+  border-radius: 30px;
+  width: 163px;
+  /* height: 33px; */
+  padding: 5%;
+  /* left: 32px; */
+  margin: auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+.menus{
+
+  padding-left: 10% !important;
+}
+#sidebar ul li a {
+  font-family: Segoe UI;
+/* font-size: 11px; */
+line-height: 15px;
+color: #647787;
+  padding: 15px 10px;
+  font-size: 100%;
+  display: block;
+  /* color: #fff; */
+  border-bottom: 2px solid #ffffff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+#sidebar ul li a:hover {
+  color: #000000;
+  /* background: #fff; */
+background: #6998d6;
+/* opacity: 0.1; */
+}
+#sidebar ul ul a {
+  font-size: 16px !important;
+  padding-left: 30px !important;
+  background: #263238;
+}
+a.dropdown-toggle.collapsed.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: 5px;
+  content: "";
+  border-bottom: 5px solid;
+  border-right: 5px solid transparent;
+  border-top: 0;
+  float: right;
+  margin-top: 10px;
+}
+#sidebar .dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+#sidebar .icon {
+  padding-right: 15px;
+}
+
+.no-style{
+  position: relative;
+  margin-top: 15% !important;
+}
+
+
+#navbar {
+  z-index: 250;
+  padding: 2px 2% 2px 2%;
+  background-color: #fff; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  /* height: 10%; */
+  box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+.pan{
+
+  padding-top: 15px !important;
+  float: left;
+  width: 50%;
+  display: block;
+}
+
+#search{
+  /* margin-left: 10%; */
+  /* padding-left: 70px; */
+  margin-top: 10px;
+  float: right;
+  width: 400px;
+}
+
+#search-input{
+  float: right;
+  border: 0px #fff !important;
+  background-color: aqua;
+}
+
+.inks{
+  margin-top: 10px;
+}
+.links{
+  float: right;
+}
+
+.no-border{
+  border: 0;
+  box-shadow: none;
+  padding-left: 10px;
+}
+
+.no-border:hover{
+  border: 0;
+  box-shadow: none;
+
+}
+.no-border:focus{
+  border: 0;
+  box-shadow: none;
+
+}
+.no-border:active{
+  border: 0;
+  box-shadow: none;
+
+}
+
+#logoText{
+  top: 25%;
+  float: left;
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 22px;
+line-height: 28px;
+color: #1875F0;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #a39d9d;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: rgb(192, 189, 189);
+  color: black;
+}
+
+.pic{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.left{
+  float: left;
+}
+.right{
+  margin-left: 5px;
+  float: right;
+}
+#name{
+  margin-top: -17px !important;
+}
+#hello{
+  text-align: right;
+  margin-bottom: 0 !important;
+}

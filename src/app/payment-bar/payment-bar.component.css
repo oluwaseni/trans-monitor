@@ -1,0 +1,24 @@
+.wrap{
+  padding: 0%;
+  margin: 0%;
+  border: 0%;
+}
+
+.select{
+  width: 200px;
+  background-color: #cccccc;
+  font-size: 110%;
+  padding: 5px;
+}
+
+.show{
+  padding-right: 20%;
+}
+.no-border{
+  border: 0;
+  border-bottom: solid #cccccc;
+  box-shadow: none;
+  padding-left: 10px;
+  background-color: transparent;
+}
+

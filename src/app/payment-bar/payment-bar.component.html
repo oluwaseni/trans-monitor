@@ -1,0 +1,59 @@
+<div class="wrap">
+  <h3>Payments</h3>
+
+<div class="row">
+  <div class="col-md-3">
+    <span style="float: left;">Showing {{((pageSize * p) - pageSize) + 1}} to {{pageSize * p}} of {{totalCount}}</span>
+
+  </div>
+  <div class="col-md-5">
+    <div id="search"><span class="fa fa-search" style="color: #cccccc;"></span><input class="no-border" placeholder="Search Payments" type="text" name="search" id=""></div>
+  </div>
+  <div class="col-md-4 show">
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option *ngFor="let item of itemsDrop">{{item}}</option>
+    </select>
+
+  </div>
+</div>
+
+  <table class="table table-light p-1 pl-2 table-hover table-border table-stretch">
+    <thead style="background: #EAEEF0;">
+      <tr>
+        <th>
+          Item type
+        </th>
+        <th>
+          Price
+        </th>
+        <th>
+          User Id
+        </th>
+        <th>
+          Time
+        </th>
+        <th>Completed</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border: solid #EAEEF0;" *ngFor="let item of posts | paginate: { itemsPerPage: 10, currentPage: p, totalItems: totalCount }">
+        <td><span style="background-color: #7F8FA4; height: 30px; width: 35px; padding: 5px; text-align: center;" alt="AY" class="rounded-circle">AY</span>
+           {{item?.title}}</td>
+        <td>$73430</td>
+        <td>{{item?.userId}}</td>
+        <td>12:34</td>
+        <td><button type="button" class="btn rounded-pill"
+          [class.btn-outline-success]="item?.completed"
+          [class.btn-outline-warning]="!item?.completed"
+          >
+          <i class="fa fa-circle" aria-hidden="true"></i> {{item?.completed}}</button></td>
+        <td><i class="fa fa-sort-desc" aria-hidden="true"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span style="float: left;">Showing {{((pageSize * p) - pageSize) + 1}} to {{pageSize * p}} of {{totalCount}}</span>
+  <pagination-controls  style="float: right;" (pageChange)="p = $event"></pagination-controls>
+</div>
